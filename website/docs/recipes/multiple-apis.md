@@ -54,6 +54,8 @@ additionalResolvers:
     sourceFieldName: listQuestions # What is the source field name?
     sourceArgs: # What args does this need to take?
       pagesize: "{args.first}"
+      # if you need to specify a value inside an object, use the point notation, eg:
+      # condition.assetId: "{root.id}"
     result: items # We want to extract `items` from the result and return only this one
 ```
 
